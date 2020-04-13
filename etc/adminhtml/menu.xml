@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Kaz_BookWriters::bookwriters"
+             title="Book Writers"
+             module="Kaz_BookWriters"
+             sortOrder="50"
+             resource="Kaz_BookWriters::bookwriters"/>
+        <add id="Kaz_BookWriters::post"
+             title="Manage Writers"
+             module="Kaz_BookWriters"
+             sortOrder="10"
+             action="bookwriters/writers"
+             resource="Kaz_BookWriters::list"
+             parent="Kaz_BookWriters::bookwriters"/>
+    </menu>
+</config>
